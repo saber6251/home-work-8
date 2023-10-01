@@ -1,0 +1,157 @@
+ @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Ubuntu:wght@300;400;500&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+/* common css starts */
+
+:root{
+    --font1:'Ubuntu', sans-serif;
+    --font2:'Abril Fatface', cursive;
+    --font3:'Open Sans', sans-serif;
+    --primaryColor:#0f2f44;
+    --commonColor:#8383bf;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.align{
+    align-items: center;
+}
+/* common css ends */
+
+/* header starts */
+
+header{
+    color: #fefefe;
+    background-color: var(--primaryColor);
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 19px 0;
+}
+.wel{
+    width: 30%;
+}
+.opening{
+    width: 70%;
+    text-align: right;
+}
+
+/* header ends */
+
+/* nav starts */
+
+nav ul li{
+    display: inline-block;
+}
+.logo{
+    width: 30%;
+    padding: 30px 0;
+}
+.menu{
+    width: 70%;
+    text-align: right;
+}
+nav ul li a{
+    display: inline-block;
+    font-family: var(--font1);
+    font-weight: 500;
+    color: #222;
+    padding: 40px 19px;
+    transition: 37ms;
+}
+nav ul li:hover a{
+    color: #ffd447;
+    background-color: #fff9e6;
+}
+nav ul li span{
+    color: #999999;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    border: 1px solid #e8e8e8;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+/* nav ends */
+
+/* banner starts */
+
+#banner{
+    background-image: url(../images/banner.jpg);
+    height: 600px;
+    background-position: center;
+}
+.content{
+    width: 40%;
+}
+.content h2{
+    font-size: 50px;
+    font-weight: 300;
+    color: var(--primaryColor);
+    font-family: var(--font1);
+}
+.content h1{
+    font-family: var(--font2);
+    font-weight: 400;
+    color: var(--primaryColor);
+    font-size: 80px;
+    line-height: 20px;
+}
+.content h4{
+    font-family: var(--font1);
+    font-weight: 400;
+    color: var(--commonColor);
+    font-size: 32px;
+    letter-spacing: 8px;
+}
+.content p{
+    font-weight: 400;
+    font-family: var(--font3);
+    font-size: 14px;
+    color: #444444;
+    margin: 30px 0;
+}
+.content #button{
+    background-color: var(--commonColor);
+    padding: 15px 20px;
+    font-family: var(--font1);
+    font-weight: 500;
+    color: #fff;
+    border-radius: 5px;
+}
+.content #playbutton{
+    display: inline-block;
+    height: 40px;
+    width:40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: var(--commonColor);
+    margin-left: 20px;
+    box-shadow: 0 0 10px #00000023;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+    height: 100%;
+}
+/* banner ends */
